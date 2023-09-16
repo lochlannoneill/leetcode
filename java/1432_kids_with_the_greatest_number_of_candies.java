@@ -1,5 +1,7 @@
 
 // ALL TESTS PASSED
+// Runtime: 1ms (faster than 89.59%)
+// Memory: 41.60MB (faster than 32.90%)
 // 
 // Input: candies = [2,3,5,1,3], extraCandies = 3
 // Output: [true,true,true,false,true] 
