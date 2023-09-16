@@ -12,7 +12,7 @@
 
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        List<Boolean> greater = new ArrayList<>();
+        List<Boolean> res = new ArrayList<>();
 
         int max = 0;
 
@@ -21,9 +21,9 @@ class Solution {
         }
 
         for (int i = 0; i < candies.length; i++) {
-          greater.add((candies[i]+extraCandies) >= max);
+          res.add((candies[i]+extraCandies) >= max);
         }
 
-        return greater;
+        return res;
     }
 }
