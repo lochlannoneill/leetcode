@@ -13,13 +13,9 @@ class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         int counter = 0;
 
-        // empty flowerbed
         if (flowerbed.length == 0) return false;
-
-        // plant nothing
         if (n == 0) return true;
 
-        // // plant when flowerpot size of 1
         // if (flowerbed.length == 1) {
         //     return flowerbed[0] == 0 || n == 0;
         // }
