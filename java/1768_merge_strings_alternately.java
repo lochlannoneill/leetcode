@@ -1,4 +1,6 @@
 // ALL TESTS PASSED
+// Runtime: 7ms (faster than 26.35%)
+// Memory: 42.14MB (faster than 5.40%)
 // 
 // Input: word1 = "abcd", word2 = "pq"
 // Output: "apbqcd"
