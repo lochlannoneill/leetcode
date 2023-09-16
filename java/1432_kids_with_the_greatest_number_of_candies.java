@@ -1,4 +1,3 @@
-
 // ALL TESTS PASSED
 // Runtime: 1ms (faster than 89.59%)
 // Memory: 41.60MB (faster than 32.90%)
