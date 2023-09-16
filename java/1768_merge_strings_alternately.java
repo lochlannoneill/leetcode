@@ -2,6 +2,8 @@
 // Runtime: 7ms (faster than 26.35%)
 // Memory: 42.14MB (faster than 5.40%)
 // 
+//  You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
+// 
 // Input: word1 = "abcd", word2 = "pq"
 // Output: "apbqcd"
 // Explanation: Notice that as word1 is longer, "cd" is appended to the end.
