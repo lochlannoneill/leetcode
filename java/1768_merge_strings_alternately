@@ -7,8 +7,8 @@
 // word2:    p   q 
 // merged: a p b q c   d
 
-public class HelloWorld {
-    public static void main(String[] args) {
+class Solution {
+    public String mergeAlternately(String word1, String word2) {
         String res = "";
         String longest = (word1.length() > word2.length()) ? word1 : word2;
 
