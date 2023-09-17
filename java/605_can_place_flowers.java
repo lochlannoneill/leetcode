@@ -19,10 +19,6 @@ class Solution {
         if (flowerbed.length == 0) return false;
         if (n == 0) return true;
 
-        // if (flowerbed.length == 1) {
-        //     return flowerbed[0] == 0 || n == 0;
-        // }
-
         for (int i = 0; i < flowerbed.length; i++) {
             if(flowerbed[i] == 0) {
                 int left = (i == 0) ? 0 : flowerbed[i-1];
