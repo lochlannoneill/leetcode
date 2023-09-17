@@ -1,6 +1,6 @@
 // ALL TESTS PASSED
 // Runtime: 0ms (better than 100.00%)
-// Memory: 41.83MB (better than 22.79%)
+// Memory: 41.43MB (better than 54.37%)
 // 
 // Given the root of a binary tree, return its maximum depth.
 // A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
