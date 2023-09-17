@@ -14,7 +14,7 @@
 
 class Solution {
     public int maxDepth(TreeNode root) {
-        if (root == null) return 0; // Base case: an empty tree has a depth of 0
+        if (root == null) return false;
 
         int maxLeft = maxDepth(root.left);
         int maxRight = maxDepth(root.right);
