@@ -1,4 +1,5 @@
 // ALL TESTS PASSED
+// Time Complexity: O(1) -> O(n)
 // Runtime: 1ms (better than 98.00%)
 // Memory: 43.18MB (better than 99.50%)
 // 
