@@ -1,6 +1,6 @@
 // WRONG ANSWER
 // 7/22 Test Cases Passed
-// Time Complexity: O(n)
+// Time Complexity: O(n^2)
 // Runtime: N/A
 // Memory: N/A
 // 
@@ -22,7 +22,7 @@ class Solution {
         for (int i = 0; i < nums.length - 1; i++) {
             int product = 1;
             for (int j = 0; j < nums.length; j++) {
-            if (i != j) { // Exclude the current element from the product
+                if (i != j) { // Exclude the current element from the product
                     product *= nums[j];
                 }
             }
