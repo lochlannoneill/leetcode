@@ -21,7 +21,7 @@ class Solution {
         for (int num : nums) {
             if (num != 0) {
                 nums[counter_nonzero] = num;
-                index_nozero++;
+                counter_nonzero++;
             }
         }
 
