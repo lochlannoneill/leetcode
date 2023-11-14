@@ -15,7 +15,6 @@
 //      Input: root = []
 //      Output: []
 
-
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
