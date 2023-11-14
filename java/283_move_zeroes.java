@@ -14,19 +14,20 @@
 //      Input: nums = [0]
 //      Output: [0]
 
+package java;
 class Solution {
     public void moveZeroes(int[] nums) {
-        int counter_nonzero = 0;
+        int nonZeroIndex = 0;
 
-        for (int num : nums) {
-            if (num != 0) {
-                nums[counter_nonzero] = num;
-                counter_nonzero++;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                if (i != nonZeroIndex) { // Avoid unnecessary swaps
+                    int temp = nums[i];
+                    nums[i] = nums[nonZeroIndex];
+                    nums[nonZeroIndex] = temp;
+                }
+                nonZeroIndex++;
             }
-        }
-
-        for (int i = counter_nonzero; i < nums.length; i++) {
-            nums[i] = 0;
         }
     }
 }
