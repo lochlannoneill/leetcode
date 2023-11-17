@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 7ms (better than 26.35%)
-// Memory: 42.14MB (better than 5.40%)
+// Runtime: 7ms (beats 26.35%)
+// Memory: 42.14MB (beats 5.40%)
 // 
 //  You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
 // 

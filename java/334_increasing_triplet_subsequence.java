@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 2ms (better than 89.92%)
-// Memory: 129.28MB (better than 80.00%)
+// Runtime: 2ms (beats 89.92%)
+// Memory: 129.28MB (beats 80.00%)
 // 
 // Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k].
 // If no such indices exists, return false.

@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 1ms (better than 100.00%)
-// Memory: 44.9MB (better than 66.55%)
+// Runtime: 1ms (beats 100.00%)
+// Memory: 44.9MB (beats 66.55%)
 // 
 // Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 //

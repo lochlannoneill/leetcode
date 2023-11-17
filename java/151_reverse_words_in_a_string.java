@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 10ms (better than 41.31%)
-// Memory: 44.27MB (better than 21.89%)
+// Runtime: 10ms (beats 41.31%)
+// Memory: 44.27MB (beats 21.89%)
 // 
 // Given an input string s, reverse the order of the words.
 // A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.

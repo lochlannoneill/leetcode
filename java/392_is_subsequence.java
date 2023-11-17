@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 1ms (better than 91.55%)
-// Memory: 40.20MB (better than 81.27%)
+// Runtime: 1ms (beats 91.55%)
+// Memory: 40.20MB (beats 81.27%)
 // 
 // Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
 //

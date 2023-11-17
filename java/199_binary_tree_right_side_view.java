@@ -1,7 +1,7 @@
 // ALL TESTS PASSED
 // Time Complexity: O(n)
-// Runtime: 0ms (better than 100.00%)
-// Memory: 40.89MB (better than 86.88%)
+// Runtime: 0ms (beats 100.00%)
+// Memory: 40.89MB (beats 86.88%)
 // 
 // Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 // 
