@@ -21,7 +21,7 @@ class Solution {
         if (n == 0) return true;
 
         for (int i = 0; i < flowerbed.length; i++) {
-            if(flowerbed[i] == 0) {
+            if(flowerbed[i] != 0) continue;
                 int left = (i == 0) ? 0 : flowerbed[i-1];
                 int right = (i == flowerbed.length - 1) ? 0 : flowerbed[i+1];
 
@@ -29,7 +29,6 @@ class Solution {
                     flowerbed[i] = 1;
                     counter++;
                 }
-            }
         }
 
         return n <= counter;
