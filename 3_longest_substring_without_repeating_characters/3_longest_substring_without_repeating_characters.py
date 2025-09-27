@@ -36,18 +36,14 @@ class Solution(object):
         :rtype: int
         """
         left = 0
-        right = 0
-
-        substring = list()
+        substring = set()
         max_substring = 0
 
-        while right < len(s):
-            if s[right] not in substring:
-                substring.append(s[right])
-                max_substring = max(max_substring, len(substring))
-                right += 1
-            else:
+        for right, letter in enumerate(s):
+            while letter in substring:
                 substring.remove(s[left])
                 left += 1
+            substring.add(s[right])
+            max_substring = max(max_substring, right-left+1)
         
         return max_substring
