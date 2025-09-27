@@ -37,18 +37,17 @@ class Solution(object):
         """
         left = 0
         right = 0
-        max_substring = 0
+
         substring = list()
+        max_substring = 0
 
         while right < len(s):
-            # right pointer + 1
             if s[right] not in substring:
                 substring.append(s[right])
+                max_substring = max(max_substring, len(substring))
                 right += 1
-                max_substring = max(max_substring, len(substring))  # compare max at each iteration
-            # left pointer + 1
             else:
                 substring.remove(s[left])
                 left += 1
-
+        
         return max_substring
