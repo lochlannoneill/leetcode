@@ -41,8 +41,7 @@ class Solution(object):
             # check if start of sequence
             if num-1 not in numset:
                 length = 0
-                current = num + length
-                while num+length in numset:
+                while num + length in numset:
                     length += 1
                 longest = max(longest, length)
         return longest
