@@ -1,4 +1,5 @@
 class Solution:
+
     def encode(self, strs: List[str]) -> str:
         res = []
         for string in strs:
@@ -13,12 +14,10 @@ class Solution:
             j = i
             while s[j] != "#":
                 j += 1
-            length = int(s[i:j])
-            
-            word_start = j+1
-            word_end = j+length+1
+            word_length = int(s[i:j])
+            word_start = j + 1
+            word_end = word_start + word_length
             res.append(s[word_start:word_end])
-
             i = word_end
 
         return res
