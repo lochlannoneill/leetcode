@@ -38,10 +38,9 @@ class Solution(object):
         longest = 0
 
         for num in numset:
-            # check if start of sequence
-            if num-1 not in numset:
+            if num-1 not in numset:  # if number before NOT exists, new sequence
                 length = 0
-                while num + length in numset:
+                while num + length in numset:  # continue while number after exists
                     length += 1
                 longest = max(longest, length)
         return longest
