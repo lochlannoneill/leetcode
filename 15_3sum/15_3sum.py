@@ -49,7 +49,8 @@ class Solution(object):
             if anchor > 0 and nums[anchor] == nums[anchor-1]:
                 continue
             
-            left, right = anchor + 1, len(nums) - 1
+            left = anchor + 1
+            right = len(nums) - 1
             while left < right:
                 sum_of_pointers = nums[anchor] + nums[left] + nums[right]
 
