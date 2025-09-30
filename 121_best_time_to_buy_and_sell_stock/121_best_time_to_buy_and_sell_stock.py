@@ -29,22 +29,19 @@
 # 0 <= prices[i] <= 104
 
 class Solution(object):
-    def maxProfit(self, prices):
+    def lengthOfLongestSubstring(self, s):
         """
-        :type prices: List[int]
+        :type s: str
         :rtype: int
         """
-        max_profit = 0
+        substring = set()
+        max_length = 0
 
         left = 0
-        right = 1
-
-        while right < len(prices):
-            if prices[left] < prices[right]:
-                profit = prices[right] - prices[left]
-                max_profit = max(max_profit, profit)
-            else:
-                left = right
-            right += 1
-        
-        return max_profit
+        for right, ch in enumerate(s):
+            while ch in substring:
+                substring.remove(s[left])  # remove the char leaving the window
+                left += 1 
+            substring.add(ch)
+            max_length = max(max_length, right - left + 1)
+        return max_length
