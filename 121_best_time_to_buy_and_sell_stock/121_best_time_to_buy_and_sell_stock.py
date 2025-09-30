@@ -34,17 +34,14 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        max_profit = 0
-
         left = 0
-        right = 1
-
-        while right < len(prices):
-            if prices[left] < prices[right]:
+        max_profit = 0
+        
+        for right in range(len(prices)):
+            if prices[right] > prices[left]:
                 profit = prices[right] - prices[left]
                 max_profit = max(max_profit, profit)
             else:
                 left = right
-            right += 1
-        
+
         return max_profit
