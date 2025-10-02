@@ -40,14 +40,14 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: None Do not return anything, modify head in-place instead.
         """
-        # Find middle
+        # 1. Find middle
         slow = head
         fast = head.next
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
 
-        # Reverse second half of list
+        # 2. Reverse second half of list
         current = slow.next  # second starts at middle
         slow.next = None
         previous = slow.next
@@ -57,7 +57,7 @@ class Solution(object):
             previous = current
             current = nxt
 
-        # Merge first and second halfs
+        # 3. Merge first and second halfs
         first = head
         second = previous
         while second:
