@@ -32,12 +32,11 @@ class Solution(object):
         :rtype: List[int]
         """
         res = [0] * len(temperatures)
-        stack = []  # contains previous indexes
+        stack = []
 
         for index, temp in enumerate(temperatures):
-            while stack and temperatures[stack[-1]] < temp:
+            while stack and temp > temperatures[stack[-1]]:
                 prev_index = stack.pop()
-                res[prev_index] = index - prev - index
-            stack.append()
-        
+                res[prev_index] = index - prev_index
+            stack.append(index)
         return res
